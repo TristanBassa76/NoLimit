@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: lightgoldenrodyellow;
+}
+
+.image{
+    height:500px; 
+    background-image: url("../images/NoLimit.png");
+    background-repeat: no-repeat;
+    margin-left: 22%;
+    margin-right: auto;
+
+}
+
+#navbarExample01{
+    margin-top: 5px;
+    background-color:lightgoldenrodyellow;
+    border-radius: 15px;
+    box-shadow: 1px 1px 50px 1px #C2C2C2;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    height: auto;
+    color: white;
+}
+.contact{
+text-align: left;
+font-size: 15px;
+}
+
+.text-center{
+text-align: center;
+}
