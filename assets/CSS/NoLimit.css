@@ -1,24 +1,40 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
 body{
     background-color: black;
     overflow-x: hidden;
     color: lightgoldenrodyellow;
 }
 
-.image{
-    height:500px; 
-    background-image: url("../images/NoLimit.png");
-    position: relative;
+.bg-image{
     background-repeat: no-repeat;
-    left: 250px;
-    top: -80px;
-
-}
-
-#navbarExample01{
-    margin-top: 5px;
-    background-color:lightgoldenrodyellow;
-    border-radius: 10px;
-    box-shadow: 1px 1px 20px 1px #C8C8C8;
+    margin-left: 250px;
+    margin-top: -50px;
+    margin-bottom: -100px;
 }
 
 footer{
@@ -28,10 +44,31 @@ footer{
     color: white;
 }
 .contact{
-text-align: left;
-font-size: 15px;
+    text-align: left;
+    font-size: 15px;
 }
 
 .text-center{
-text-align: center;
+    text-align: center;
 }
+
+
+#premier_bloc{
+    width: 18rem;
+    margin: 10%;
+    background-color: #EEBF72;
+    color: black;
+    font-family: cursive;
+
+}
+
+#second_bloc{
+    width: 18rem;
+    margin: 10%;
+    background-color: #EEBF72;
+    color: black;
+    font-family: cursive;
+
+}
+
+
