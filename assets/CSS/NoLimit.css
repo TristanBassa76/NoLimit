@@ -26,8 +26,16 @@
 
 body{
     background-color: black;
-    overflow-x: hidden;
+    overflow-x: auto;
     color: lightgoldenrodyellow;
+
+}
+main{
+    min-height: 90vh;
+}
+
+#main_personnes{
+    margin-top: 30%;
 }
 
 .bg-image{
@@ -39,36 +47,224 @@ body{
 
 footer{
     width: 100%;
-    position: relative;
-    height: auto;
+    position: absolute;
     color: white;
+    bot: 0;
+    margin-bottom: 0px;
 }
 .contact{
-    text-align: left;
-    font-size: 15px;
+    text-decoration: none;
+    color: white;
 }
 
 .text-center{
     text-align: center;
 }
 
+.section_bloc{
+    
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    grid-gap: 10px;
+}
 
 #premier_bloc{
     width: 18rem;
-    margin: 10%;
     background-color: #EEBF72;
     color: black;
     font-family: cursive;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
 
 }
 
 #second_bloc{
     width: 18rem;
-    margin: 10%;
     background-color: #EEBF72;
     color: black;
     font-family: cursive;
-
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 
+
+/*
+    caroussel
+*/
+    
+.icon-cards {
+     position: relative;
+     width: 30vw;
+     height: 20vw;
+     max-width: 300px;
+     max-height: 200px;
+     margin: 0;
+     perspective: 500px;
+     transform-origin: center;
+     margin-left: 90px;
+}
+ .icon-cards__content {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     transform-origin: center;
+     transform-style: preserve-3d;
+     transform: translateZ(-30vw) rotateY(0);
+     animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+ .icon-cards__item {
+     position: absolute;
+     background-position: center;
+     background-repeat: no-repeat;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     width: 25vw;
+     height: 25vw;
+     background-size: contain;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+     border-radius: 6px;
+     transform-origin: center;
+}
+ .icon-cards__item:nth-child(1) {
+     transform: rotateY(0) translateZ(35vw);
+}
+ .icon-cards__item:nth-child(2) {
+     transform: rotateY(120deg) translateZ(35vw);
+}
+ .icon-cards__item:nth-child(3) {
+     transform: rotateY(240deg) translateZ(35vw);
+}
+ @keyframes carousel {
+     0%, 17.5% {
+         transform: translateZ(-35vw) rotateY(0);
+    }
+     27.5%, 45% {
+         transform: translateZ(-35vw) rotateY(-120deg);
+    }
+     55%, 72.5% {
+         transform: translateZ(-35vw) rotateY(-240deg);
+    }
+     82.5%, 100% {
+         transform: translateZ(-35vw) rotateY(-360deg);
+    }
+}
+ 
+
+/*
+    caroussel
+*/
+
+/*
+    carousel personnes
+*/
+
+#bloc_personnes1{
+    width: 18rem;
+    background-color: #EEBF72;
+    color: black;
+    font-family: cursive;
+    margin-left: 15%;
+}
+
+
+.items {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.items .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item.active {
+  opacity: 1;
+  z-index: 99;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+
+.item.prev {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(-125%, -50%);
+}
+
+.item.next {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(25%, -50%);
+}
+
+.items .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 275px;
+  z-index: 100;
+}
+
+.button-container .button {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
+  opacity: 1;
+}
+
+.button-container .button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+  float: left;
+}
+
+.button-container .button:nth-child(2) {
+  float: right;
+}
+
+/*
+    carousel personnes
+*/
