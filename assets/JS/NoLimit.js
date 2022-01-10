@@ -50,9 +50,17 @@ const gotoNum = number => {
 
 //carousel
   function classToggle() {
-  var el = document.querySelector('.icon-cards__content');
+  var el = document.querySelector('.icon-cards_content');
   el.classList.toggle('step-animation');
 }
 
 document.querySelector('#toggle-animation').addEventListener('click', classToggle);
 //carousel
+
+
+/*function toggleText(){
+  let personne = document.querySelector('.bloc_personne1');
+  personne.classList.toggle('display : none;');
+}
+
+document.querySelector('button-container').addEventListener('click', toggleText);*/
