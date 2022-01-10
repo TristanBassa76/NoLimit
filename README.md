@@ -1,5 +1,5 @@
 # No Limit
-Création d'un site vitrine pour No Limit
+Création d'un site vitrine pour l'association No Limit
 
 Made by [Tristan Bassa]
 
