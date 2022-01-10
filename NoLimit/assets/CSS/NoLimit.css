@@ -26,7 +26,7 @@
 
 body{
     background-color: black;
-    overflow-x: auto;
+    overflow: auto;
     color: lightgoldenrodyellow;
 
 }
@@ -35,14 +35,18 @@ main{
 }
 
 #main_personnes{
+
     margin-top: 30%;
 }
 
 .bg-image{
     background-repeat: no-repeat;
-    margin-left: 250px;
+    /*margin-left: 250px;
     margin-top: -50px;
-    margin-bottom: -100px;
+    margin-bottom: -100px;*/
+    background-position: center;
+    margin-bottom : -30px;
+    margin-top: -20px;    
 }
 
 footer{
@@ -92,7 +96,13 @@ footer{
     grid-row-end: 1;
 }
 
+#textAreaExample1{
+    margin-top: -250px;
+    text-align: center;
+    margin-left: 50%;
+    
 
+}
 
 /*
     caroussel
@@ -167,14 +177,30 @@ footer{
     carousel personnes
 */
 
-#bloc_personnes1{
+#bloc_personnes{
+
+}
+
+
+#bloc_personne1{
+    float: left;
     width: 18rem;
     background-color: #EEBF72;
     color: black;
     font-family: cursive;
-    margin-left: 15%;
+    margin-top: 15vh;
+    margin-left: 20vw;
 }
 
+#bloc_personne2{
+    float: right;
+    width: 18rem;
+    background-color: #EEBF72;
+    color: black;
+    font-family: cursive;
+    margin-top: 15vh;
+    margin-right: 20vw;
+}
 
 .items {
   position: absolute;
